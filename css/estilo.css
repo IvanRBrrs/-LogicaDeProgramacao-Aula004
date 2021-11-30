@@ -2,8 +2,7 @@
 *{
     margin: 0 auto;
     padding: 0;
-    text-align: center;
-    
+    text-align: center;  
 }
 body{
     position: relative;
@@ -19,11 +18,7 @@ body{
     text-transform: uppercase;
     border-radius: 20px;
     padding-top: 70px;
-
-    top: 0px;
-    
-    
-    
+    top: 0px;  
 }
 h1{
     background-color: gray;

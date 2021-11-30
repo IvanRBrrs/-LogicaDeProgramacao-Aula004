@@ -12,7 +12,6 @@ function calcular (){
         resultado.innerHTML = (`${valor2} é igual a ${valor1}`)
     }
 }
-
 function testar (){
     
     let numero1 = document.getElementById('numero_1').value;
@@ -26,7 +25,6 @@ function testar (){
         resultado.innerHTML = (`${numero1} é zero`)
     }
 }
-
 function texto (){
     
     let letra1 = document.getElementById('letra').value;
@@ -41,17 +39,17 @@ function texto (){
     }
 
 }
-
-
 function nota (){
     
     let number = document.getElementById('nota').value;
     
     let resultado = document.getElementById('Igual');
-    if (number >= 7 ){
-        resultado.innerHTML = (`${number}.0 Passou.`)
+    if ( number == 10 ){
+        resultado.innerHTML = (`${number}.0 Aprovado com distinção.`)
     } else if(number < 7 ){
         resultado.innerHTML = (`${number}.0 Reprovado`)
+    } else if( number >= 7 ){
+        resultado.innerHTML = (`${number}.0 Aprovado`)
     } 
 }
 
