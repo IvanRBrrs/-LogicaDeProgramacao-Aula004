@@ -87,7 +87,23 @@ function calc (){
     }
 }
 
+function Hora (){
+    
+    let hora1 = document.getElementById('hora').value;
+    
+    let Return = document.getElementById('Return');
 
+    if ( hora1 == 'M' || hora1 == 'm' ){
+        Return.innerHTML = (`${hora1}  é periodo matutino`)
+    } else if(hora1 == 'V' || hora1 == 'v'){
+        Return.innerHTML = (`${hora1} é periodo vespertino`)
+    } else if(hora1 == 'N' || hora1 == 'n'){
+        Return.innerHTML = (`${hora1} é periodo noturno`)
+    } else{ 
+        Return.innerHTML = (`invalido`)
+    }
+
+}
 
 
 
