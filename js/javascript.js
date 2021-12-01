@@ -64,7 +64,28 @@ function Type (){
         resultado5.innerHTML = (`${tipo1} É consoante ou invalido`);
     }
 }
-
+function calc (){
+    
+    let Val1 = document.getElementById('value_1').value;
+    let Val2 = document.getElementById('value_2').value; 
+    let Val3 = document.getElementById('value_3').value; 
+    let resultCalc = document.getElementById('resultCalc');
+    let resultCalcMn = document.getElementById('resultCalcMn');
+    
+    if (Val1 > Val2 && Val1 > Val3){
+        resultCalc.innerHTML = (`${Val1} é maior que ${Val2} e ${Val3}`)
+    } else if (Val2 > Val1 && Val2 > Val3){
+        resultCalc.innerHTML = (`${Val2} é maior que ${Val1} e ${Val3}`)
+    } else if (Val3 > Val1 && Val3 > Val2){
+        resultCalc.innerHTML = (`${Val3} é maior que ${Val1} e ${Val2}`)
+    } if (Val3 < Val1 && Val3 < Val2){
+        resultCalcMn.innerHTML = (`${Val3} é menor que ${Val1} e ${Val2}`)
+    } else if (Val2 < Val1 && Val2 < Val3){
+        resultCalcMn.innerHTML = (`${Val2} é menor que ${Val1} e ${Val3}`)
+    } else if (Val1 < Val2 && Val1 < Val3){
+        resultCalcMn.innerHTML = (`${Val1} é menor que ${Val2} e ${Val3}`)
+    }
+}
 
 
 
