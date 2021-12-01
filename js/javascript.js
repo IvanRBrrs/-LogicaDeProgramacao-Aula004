@@ -93,16 +93,15 @@ function Hora (){
     
     let Return = document.getElementById('Return');
 
-    if ( hora1 == 'M' || hora1 == 'm' ){
-        Return.innerHTML = (`${hora1}  é periodo matutino`)
+    if (hora1 == 'M' || hora1 == 'm'){
+        Return.innerHTML = (`bom dia`);
     } else if(hora1 == 'V' || hora1 == 'v'){
-        Return.innerHTML = (`${hora1} é periodo vespertino`)
+        Return.innerHTML = (`boa tarde`);
     } else if(hora1 == 'N' || hora1 == 'n'){
-        Return.innerHTML = (`${hora1} é periodo noturno`)
+        Return.innerHTML = (`boa noite`);
     } else{ 
-        Return.innerHTML = (`invalido`)
+        Return.innerHTML = (`inválido`);
     }
-
 }
 
 

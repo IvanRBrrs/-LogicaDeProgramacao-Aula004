@@ -13,11 +13,11 @@ body{
     background-color: gray;
     color: black;
     width: 700px;
-    height: 160px;
+    height: 180px;
     /* line-height: 50px; */
     text-transform: uppercase;
     border-radius: 20px;
-    padding-top: 70px;
+    padding-top: 50px;
     top: 0px;  
 }
 h1{
