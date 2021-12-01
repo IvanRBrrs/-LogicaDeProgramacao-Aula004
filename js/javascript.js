@@ -52,6 +52,18 @@ function nota (){
         resultado.innerHTML = (`${number}.0 Aprovado`)
     } 
 }
+function Type (){
+    
+    let tipo1 = document.getElementById('tipo').value;
+    
+    let resultado5 = document.getElementById('ResultadoCouV');
+    
+    if(tipo1 == 'A' || tipo1 == 'a' || tipo1 == 'E' || tipo1 == 'e' || tipo1 == 'I' || tipo1 == 'i' || tipo1 == 'O'|| tipo1 == 'o' || tipo1 == 'U' || tipo1 == 'u'){
+        resultado5.innerHTML = (`${tipo1} É vogal`);
+    }else{
+        resultado5.innerHTML = (`${tipo1} É consoante ou invalido`);
+    }
+}
 
 
 
@@ -67,6 +79,20 @@ function nota (){
 
 
 
+
+
+
+
+
+
+
+// if (tipo1 == 'A' || 'a' || 'E' || 'e' || 'I' || 'i' || 'O'|| 'o' || 'U' || 'u'){
+//     resultado5.innerHTML = (`${tipo1} É vogal`)
+// } else if(tipo1 == 'b' || 'B' || 'C' || 'c' || 'D' || 'd' || 'F' || 'f' || 'G' || 'g' || 'H' || 'h' || 'J' || 'j' || 'K' || 'k' || 'L' || 'l' || 'M' || 'm' || 'N' || 'n' || 'p' || 'P' || 'Q' || 'q' || 'R' || 'r' || 'S' || 's' || 'T' || 't' || 'v' || 'V' || 'W' || 'w' || 'x' || 'X' || 'Y' || 'y' || 'Z' || 'z' ){
+//     resultado5.innerHTML = (`${tipo1} É consoante`) 
+// } else{
+//     resultado5.innerHTML = (`${tipo1} É invalido`)
+// }
 
 
 
