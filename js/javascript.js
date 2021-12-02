@@ -86,7 +86,6 @@ function calc (){
         resultCalcMn.innerHTML = (`${Val1} é menor que ${Val2} e ${Val3}`)
     }
 }
-
 function Hora (){
     
     let hora1 = document.getElementById('hora').value;
@@ -103,7 +102,6 @@ function Hora (){
         Return.innerHTML = (`inválido`);
     }
 }
-
 function tip (){
     
     let Preco1 = document.getElementById('preco_1').value;
@@ -122,7 +120,6 @@ function tip (){
         resultTip.innerHTML = (`invalido`)
     }
 }
-
 function media (){
     
     let Mes2 = parseInt(document.getElementById('mes_2').value); 
@@ -151,83 +148,6 @@ function media (){
     }
 }
 
-
-       
-
-
-
-// if (mediaM >= 9 ){
-//     resultMedia.innerHTML = (`Média semestral foi ${mediaM} - Aluno conceito A - Aprovado`)
-// } else if (mediaM >= 8.9 || mediaM <= 7.5){
-//     resultMedia.innerHTML = (`Média semestral foi ${mediaM} - Aluno conceito B - Aprovado`)
-// } else if (mediaM >= 7.4 || mediaM <= 6){
-//     resultMedia.innerHTML = (`Média semestral foi ${mediaM} - Aluno conceito C - Aprovado`)
-// } else if (mediaM >= 5.9 || mediaM <= 4){
-//     resultMedia.innerHTML = (`Média semestral foi ${mediaM} - Aluno conceito D - Reprovado`)
-// } else if (mediaM <= 3.9 || mediaM >= 0){
-//     resultMedia.innerHTML = (`Média semestral foi ${mediaM} - Aluno conceito E - Reprovado`)
-// } else{
-//     resultMedia.innerHTML = (`invalido`)
-// }
-
-
-
-
-
-
-
-
-
-
-
-// if (tipo1 == 'A' || 'a' || 'E' || 'e' || 'I' || 'i' || 'O'|| 'o' || 'U' || 'u'){
-//     resultado5.innerHTML = (`${tipo1} É vogal`)
-// } else if(tipo1 == 'b' || 'B' || 'C' || 'c' || 'D' || 'd' || 'F' || 'f' || 'G' || 'g' || 'H' || 'h' || 'J' || 'j' || 'K' || 'k' || 'L' || 'l' || 'M' || 'm' || 'N' || 'n' || 'p' || 'P' || 'Q' || 'q' || 'R' || 'r' || 'S' || 's' || 'T' || 't' || 'v' || 'V' || 'W' || 'w' || 'x' || 'X' || 'Y' || 'y' || 'Z' || 'z' ){
-//     resultado5.innerHTML = (`${tipo1} É consoante`) 
-// } else{
-//     resultado5.innerHTML = (`${tipo1} É invalido`)
-// }
-
-
-
-
-
-
-    // let select1 = parseInt(document.getElementById('numero1').value);
-    // let select2 = parseInt(document.getElementById('numero2').value);
-
-//     if(select1 === 0 && select2 === 0 || select1 == 1 && select2 == 1 || select1 == 2 && select2 == 2){
-//         switch(select1 || select2){
-//             case 0:
-//                 resultado.innerHTML = (`A temperatura em Kelvin é ${temperaturaC}`)
-//             break;
-//             case 1:
-//                 resultado.innerHTML = (`A temperatura em Fahrenheit é ${temperaturaC}`)
-//             break;
-//             case 2:
-//                 resultado.innerHTML = (`A temperatura em Celsius é ${temperaturaC}`)
-//             break;   
-//         }    
-//     } else if(select1 === 0 && select2 === 1){
-//         let formulaKF = temperaturaC - 459.67;
-//         resultado.innerHTML = (`${temperaturaC} Kelvin em Fahrenheit é ${formulaKF}Fahrenheit`)
-//     } else if(select1 === 0 && select2 === 2){
-//         let formulaKC = temperaturaC - 273.15;
-//         resultado.innerHTML = (`${temperaturaC} Kelvin em Celsius é ${formulaKC}ºC`)
-//     } else if(select1 === 2 && select2 === 0){
-//         let formulaCK = parseInt(temperaturaC) + 273;
-//         resultado.innerHTML = (`${temperaturaC}º Celsius em Kelvin é ${formulaCK}`)
-//     } else if(select1 === 2 && select2 === 1){
-//         let formulaCF = (parseInt(temperaturaC) * 1.8) + 32;
-//         resultado.innerHTML = (`${temperaturaC}º Celsius em Kelvin é ${formulaCF}`)
-//     } else if(select1 === 1 && select2 === 0){
-//         let formulaFK = parseInt(temperaturaC) + 255.92;
-//         resultado.innerHTML = (`${temperaturaC}º Celsius em Kelvin é ${formulaFK}`)
-//     } else if(select1 === 1 && select2 === 2){
-//         let formulaFC = parseInt(temperaturaC) - 17.22;
-//         resultado.innerHTML = (`${temperaturaC} Fahrenheit em Celsius é ${formulaFC}ºC`)
-//     }
-// };
 
 
 
