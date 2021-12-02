@@ -104,13 +104,71 @@ function Hora (){
     }
 }
 
+function tip (){
+    
+    let Preco1 = document.getElementById('preco_1').value;
+    let Preco2 = document.getElementById('preco_2').value; 
+    let Preco3 = document.getElementById('preco_3').value;
+
+    let resultTip = document.getElementById('resultTip');
+    
+    if (Preco3 < Preco1 && Preco3 < Preco2){
+        resultTip.innerHTML = (`Produto de preço ${Preco3}.00 é melhor compra que os produtos de ${Preco1}.00 e ${Preco2}.00`)
+    } else if (Preco2 < Preco1 && Preco2 < Preco3){
+        resultTip.innerHTML = (`Produto de preço ${Preco2}.00 é melhor compra que os produtos de ${Preco1}.00 e ${Preco3}.00`)
+    } else if (Preco1 < Preco2 && Preco1 < Preco3){
+        resultTip.innerHTML = (`Produto de preço ${Preco1}.00 é melhor compra que os produtos de ${Preco2}.00 e ${Preco3}.00`)
+    } else{
+        resultTip.innerHTML = (`invalido`)
+    }
+}
+
+function media (){
+    
+    let Mes2 = parseInt(document.getElementById('mes_2').value); 
+    let Mes1 = parseInt(document.getElementById('mes_1').value);
+    let Mes3 = parseInt(document.getElementById('mes_3').value);
+    let Mes4 = parseInt(document.getElementById('mes_1').value);
+    let Mes5 = parseInt(document.getElementById('mes_2').value); 
+    let Mes6 = parseInt(document.getElementById('mes_3').value);
+    
+    let mediaM = parseInt((Mes1 + Mes2 + Mes3 + Mes4 + Mes5 + Mes6) / 6);
+
+    let resultMedia = document.getElementById('resultMedia');
+
+    if (mediaM == 0 || mediaM <= 3.9 ){
+        resultMedia.innerHTML = (`Média semestral foi ${mediaM} - Aluno conceito E - Reprovado`)
+    } else if (mediaM == 4 || mediaM <= 5.9){
+        resultMedia.innerHTML = (`Média semestral foi ${mediaM} - Aluno conceito D - Reprovado`)
+    } else if (mediaM == 6 || mediaM <= 7.4){
+        resultMedia.innerHTML = (`Média semestral foi ${mediaM} - Aluno conceito C - Aprovado`)
+    } else if (mediaM == 7.5 || mediaM <= 8.9){
+        resultMedia.innerHTML = (`Média semestral foi ${mediaM} - Aluno conceito B - Aprovado`)
+    } else if (mediaM == 9 || mediaM <= 10){
+        resultMedia.innerHTML = (`Média semestral foi ${mediaM} - Aluno conceito A - Aprovado`)
+    } else{
+        resultMedia.innerHTML = (`invalido`)
+    }
+}
+
+
+       
 
 
 
-
-
-
-
+// if (mediaM >= 9 ){
+//     resultMedia.innerHTML = (`Média semestral foi ${mediaM} - Aluno conceito A - Aprovado`)
+// } else if (mediaM >= 8.9 || mediaM <= 7.5){
+//     resultMedia.innerHTML = (`Média semestral foi ${mediaM} - Aluno conceito B - Aprovado`)
+// } else if (mediaM >= 7.4 || mediaM <= 6){
+//     resultMedia.innerHTML = (`Média semestral foi ${mediaM} - Aluno conceito C - Aprovado`)
+// } else if (mediaM >= 5.9 || mediaM <= 4){
+//     resultMedia.innerHTML = (`Média semestral foi ${mediaM} - Aluno conceito D - Reprovado`)
+// } else if (mediaM <= 3.9 || mediaM >= 0){
+//     resultMedia.innerHTML = (`Média semestral foi ${mediaM} - Aluno conceito E - Reprovado`)
+// } else{
+//     resultMedia.innerHTML = (`invalido`)
+// }
 
 
 
